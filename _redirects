@@ -1,0 +1,32 @@
+# ════════════════════════════════════════════════════════════
+#  Delta System — Netlify redirects (Netlify ignores .htaccess)
+#  Missing pages automatically show /404.html with a 404 status.
+#  Folders without a trailing slash (/work/away) are fixed by Netlify itself.
+# ════════════════════════════════════════════════════════════
+
+# ── /index.html → clean folder URL (! forces it, because the file exists) ──
+/index.html                              /                              301!
+/work/carpenter-connect/index.html       /work/carpenter-connect/       301!
+/work/interior-innovation/index.html     /work/interior-innovation/     301!
+/work/away/index.html                    /work/away/                    301!
+/work/sparq-enertech/index.html          /work/sparq-enertech/          301!
+/work/fizmaa/index.html                  /work/fizmaa/                  301!
+/work/bfa/index.html                     /work/bfa/                     301!
+
+# ── /work/<project>.html → clean folder URL ──
+/work/carpenter-connect.html             /work/carpenter-connect/       301
+/work/interior-innovation.html           /work/interior-innovation/     301
+/work/away.html                          /work/away/                    301
+/work/sparq-enertech.html                /work/sparq-enertech/          301
+/work/fizmaa.html                        /work/fizmaa/                  301
+/work/bfa.html                           /work/bfa/                     301
+
+# ── Old deltasystem.in URLs → new project pages ──
+/carpenterconnect                        /work/carpenter-connect/       301
+/ii                                      /work/interior-innovation/     301
+/ii-1                                    /work/interior-innovation/     301
+/sparqenertech                           /work/sparq-enertech/          301
+/away                                    /work/away/                    301
+/bfa                                     /work/bfa/                     301
+/fizmaa                                  /work/fizmaa/                  301
+/showcase                                /                              301

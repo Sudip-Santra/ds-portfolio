@@ -1,0 +1,7 @@
+# Delta System — Netlify security headers
+# (Caching is left to Netlify's defaults, so CSS/JS updates show up immediately after each deploy.)
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
